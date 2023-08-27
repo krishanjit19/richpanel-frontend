@@ -1,0 +1,112 @@
+.canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.plan-table {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+
+    .btn {
+      background-color: #eee;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      color: #1450A3;
+    }
+    
+    .selected {
+      background-color: #1450A3;
+      color: white;
+    }
+    .selected1{
+      color: #1450A3;
+    }
+    .toggle {
+      width: 210px;
+      display: flex;
+      background-color: #1450A3;
+      border-radius: 25px;
+      
+
+      button {
+        border-radius: 25px !important;
+        margin: 10px 10px;
+        z-index: 99;
+      }
+    }
+
+    .toggle button.active {
+      background-color: white; /* Set active button background */
+      color: #1450A3; /* Set active button text color */
+    }
+
+    th {
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    td {
+      padding: 15px;
+      border-top: 1px solid #ddd;
+      text-align: left; /* Aligning content to the left */
+    }
+  }
+
+  .table-body {
+    th {
+      text-align: center;
+    }
+    td {
+      padding-right: 30px; /* Adding padding to the right */
+      text-align: center;
+    }
+
+    .devices-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+          padding: 5px 0;
+      }
+  }
+
+    tr:not(:last-child) td {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #1450A3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', 'sans-serif';
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+}
