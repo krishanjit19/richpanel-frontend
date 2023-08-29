@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <>
       <div className="home">
-        <h1>Welcome to Richpanel Assessment</h1>
+        <h1>Subscription Based Model </h1>
         <div className="signin">
           <div className="top">
             <h3>Login to your account</h3>
